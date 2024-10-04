@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/PAGE ICON.png">
+    <title>Welcome|Login</title>
+    <!-- <script>
+        function enableSubmit(){
+        let inputs = document.getElementsByClassName('Email'); // Enter your class name for a required field, this should also be reflected within your form fields.
+        let btn = document.querySelector('button ');
+        let isValid = true;
+        for (var i = 0; i < inputs.length; i++){
+        let changedInput = inputs[i];
+        if (changedInput.value.trim() === "" || changedInput.value === null){
+        isValid = false;
+        break;
+        }
+        }
+        btn.disabled = !isValid;
+        }
+        </script> -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;/
+    }
+
+    body {
+        background-color: rgb(22,27,31);
+
+    }
+
+    
+
+    .sign-in-box {
+        position: absolute;
+        height: 564px;
+        width: 592px;
+        background-color: black;
+        border-radius: 13px;
+        margin-left: 381px;
+        margin-top: 30px;
+    }
+
+    .first-line {
+        position: absolute;
+        display: flex;
+        align-items: center;
+
+    }
+
+    #close-icon {
+        color: white;
+        margin-left: 18px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+
+    .first-step {
+        color: rgb(231, 233, 234);
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+    .welcome{
+        position: absolute;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        font-weight: 600;
+        font-size: 30px;
+        margin-top: 70px;
+        margin-left: 100px
+    }
+    .Emailorusername{
+        position: absolute;
+        background: transparent;
+        border: 1px solid grey;
+        height: 60px;
+        width: 350px;
+        margin-top: 150px;
+        border-radius: 8px;
+        margin-left: 100px;
+        color: white;
+    }
+    .Emailorusername:focus-within{
+        border: 2px solid rgb(26, 140, 216);
+    }
+    input.Emailorusername:focus {
+        outline-width: 0;
+    }
+    ::placeholder{
+        position: absolute;
+        color: grey;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 17px;
+        margin-top: -9px;
+        margin-left: 10px;
+    }
+    .password{
+        position: absolute;
+        background: transparent;
+        border: 1px solid grey;
+        height: 60px;
+        width: 350px;
+        margin-top: 250px;
+        border-radius: 8px;
+        margin-left: 100px;
+        color: white;
+
+    }
+    .password:focus-within{
+        border: 2px solid rgb(26, 140, 216);
+    }
+    input.password:focus {
+        outline-width: 0;
+    }
+    .Next{
+        position: absolute;
+        width: 439px;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        height: 50px;
+        border-radius: 30px;
+        border: none;
+        margin-left: 58px;
+        margin-top: 400px;
+
+    }
+
+    
+</style>
+
+<body>
+    <div class="sign-in-box">
+        <div class="first-line">
+           <a href="CREATEACCT.html"> <span id="close-icon" class="material-symbols-outlined">close</span></a>
+            <span class="first-step">Step 2 of 2</span>
+        </div>
+            <!-- <form> -->
+                <span class="welcome">WELCOME USER</span>
+        <input class="Emailorusername" placeholder="Email or Username" type="email" minlength="10" required>
+        <input placeholder="Password" class="password" type="password" minlength="4" required>
+        <a href="TWITTERDASHBOARD.html"><button type="submit" class="Next">NEXT</button> </a>
+
+            </form>
+            </div>
+
+
+</body> 
+
+</html>

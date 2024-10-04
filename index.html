@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/PAGE ICON.png">
+    <title>Happening now on X | Create account</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: rgb(0,0,0);
+    }
+    .x-main-icon{
+        height: 283px;
+        margin-top: 100px;
+        margin-left: 224px;
+    }
+    .main-div{
+        display: flex;
+    }
+    .Happening-now{
+        font-size: 64px;
+        color: rgb(231, 233, 234);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 800;
+        margin-left: 244px;
+        margin-top: 50px;
+    }
+    .join-today{
+        position: absolute;
+        font-size: 31px;
+        color: rgb(231, 233, 234);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        margin-left: 760px;
+        margin-top: 168px;
+    }
+    .googlelogo{
+        height: 20px;
+        margin-left: -140px;
+    }
+    .signup-google{
+        position: absolute;
+        /* border: 1px solid rgb(149,98,191); */
+        border-radius: 50px;
+        padding: 10px;
+        width: 350px;
+        margin-left: -500px;
+        margin-top: 281px;
+       
+        cursor: pointer;
+        
+        
+    }
+    .Google-span{
+        position: absolute;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        
+    }
+    .signup-apple{
+        position: absolute;
+        /* border: 1px solid rgb(149,98,191); */
+        border-radius: 50px;
+        padding: 10px;
+        width: 350px;
+        margin-left: -500px;
+        margin-top: 340px;
+        cursor: pointer;
+
+    }
+    .applelogo{
+        height: 20px;
+        margin-left: -140px;
+
+    }
+    .Apple-span{
+        position: absolute;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: 5px;
+        font-weight: 700;
+
+    }
+    .hr-div{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        margin-left: 760px;
+        margin-top: 400px;
+    }
+    .hr1{
+        height: 0.00001px;
+        width: 147px;
+        border: 0px thin grey;
+        color: gray;
+        margin-right: 10px;
+    }
+    .hr2{
+        height: 0.00001px;
+        width: 147px;
+        border: 0px thin grey;
+        color: gray;
+        margin-left: 10px;
+    }
+    .or{
+        color: white;
+        font-size: 17px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .Create-acct{
+        position: absolute;
+        border-radius: 50px;
+        padding: 10px;
+        width: 350px;
+        height: 50px;
+        margin-left: -500px;
+        margin-top: 440px;
+        background-color: rgb(26,140,216);
+        color: white;
+        border: none;
+        
+        cursor: pointer;
+
+    }
+    .Create-acct-span{
+    
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: 5px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .bysigningup{
+        color: gray;
+        position: absolute;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 13px;
+        margin-top: 500px;
+        margin-left: 770px;
+       
+    }
+    .termsofservice{
+        position: absolute;
+        color: rgb(29, 155, 240);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 13px;
+        margin-top: 500px;
+        margin-left: 953px;
+        cursor: pointer;
+    }
+    .termsofservice:hover{
+        text-decoration: underline;
+    }
+    .and{
+        position: absolute;
+        color: gray;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 13px;
+        margin-top: 500px;
+        cursor: pointer;
+        margin-left: 1050px;
+    }
+    .Privacy{
+        position: absolute;
+        color: rgb(29, 155, 240);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 13px;
+        margin-top: 500px;
+        margin-left: 1075px;
+        cursor: pointer;
+    }
+    .Privacy:hover{
+        text-decoration: underline;
+    }
+    .including{
+        position: absolute;
+        color: gray;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 13px;
+        margin-top: 515px;
+        margin-left: 770px;
+        
+        cursor: pointer;
+    }
+    .Cookie{
+        position: absolute;
+        color: rgb(29, 155, 240);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 13px;
+        margin-top: 515px;
+        margin-left: 835px;
+        cursor: pointer;
+    }
+    .Cookie:hover{
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <div class="main-div">
+        <img class="x-main-icon" src="images/X icon.png" alt="">
+        <span class="Happening-now">Happening now</span>
+        <span class="join-today">Join today.</span>
+        <a href="https://accounts.google.com/"><button class="signup-google"><img class="googlelogo" src="images/googlelogo.png" alt="" > <span class="Google-span">Sign up with Google</span></button></a>
+        <a href="https://appleid.apple.com/"><button class="signup-apple"><img class="applelogo" src="images/applelogo.png" alt=""><span class="Apple-span">Sign up with Apple</span></button></a>
+        <div class="hr-div">
+            <hr class="hr1"> <span class="or">or</span> <hr class="hr2">
+        </div>
+        <a href="LANDING PAGE.html">
+            <button class="Create-acct"><span class="Create-acct-span">Create account</span></button>
+        </a>
+
+        <span class="bysigningup">By signing up, you agree to the</span><span class="termsofservice">  Terms of Service  </span>
+        <span class="and">and</span><span class="Privacy"> Privacy  Policy</span><span class="including">, including</span><span class="Cookie"> Cookie Use.</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/PAGE ICON.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Sign up for X</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background-color: rgb(36,45,52);
+    }
+    .Landing-div{
+        background-color: rgb(0,0,0);
+        height: 567px;
+        width: 595px;
+        border-radius: 15px;
+        margin-top: 30px;
+        margin-left: 380px;
+    }
+    .first-line{
+        display: flex;
+        
+    }
+    #close-icon{
+        color: rgb(239,243,244);
+        height: 12px;
+        margin-left: 16px;
+        margin-top: 16px;
+        transition: all 1s;
+        cursor: pointer;
+    }
+    #close-icon:hover{
+        background-color: grey;
+        border-radius: 20px;
+        height: 25px;
+    }
+    .x-icon{
+        height: 29px;
+        margin-top: 12px;
+        margin-left: 222px;  
+    }
+    .line-2{
+        position: absolute;
+        color: rgb(231, 233, 234);
+        font-size: 31px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        margin-top: 25px;
+        margin-left: 105px;
+    }
+    .googlelogo{
+        height: 20px;
+        margin-left: -140px;
+    }
+    .signup-google{
+        /* border: 1px solid rgb(149,98,191); */
+        border-radius: 50px;
+        padding: 10px;
+        width: 350px;
+        margin-left: 105px;
+        margin-top: 100px;
+        cursor: pointer;
+        
+        
+    }
+    .Google-span{
+        position: absolute;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        
+    }
+    .signup-apple{
+        /* border: 1px solid rgb(149,98,191); */
+        border-radius: 50px;
+        padding: 10px;
+        width: 350px;
+        margin-left: 105px;
+        margin-top: 30px;
+        cursor: pointer;
+
+    }
+    .applelogo{
+        height: 20px;
+        margin-left: -140px;
+
+    }
+    .Apple-span{
+        position: absolute;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: 5px;
+        font-weight: 700;
+
+    }
+    .hr-div{
+        display: flex;
+        align-items: center;
+        margin-left: 115px;
+        margin-top: 20px;
+    }
+    .hr1{
+        height: 0.00001px;
+        width: 147px;
+        border: 0px thin grey;
+        color: gray;
+        margin-right: 10px;
+    }
+    .hr2{
+        height: 0.00001px;
+        width: 147px;
+        border: 0px thin grey;
+        color: gray;
+        margin-left: 10px;
+    }
+    .or{
+        color: white;
+        font-size: 17px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .Create-acct{
+        border-radius: 50px;
+        padding: 10px;
+        width: 350px;
+        margin-left: 105px;
+        margin-top: 30px;
+        cursor: pointer;
+
+    }
+    .Create-acct-span{
+    
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: 5px;
+        font-weight: 700;
+    }
+    .bysigningup{
+        color: gray;
+        position: absolute;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 13px;
+        margin-top: 80px;
+        margin-left: -340px;
+    }
+    .termsofservice{
+        position: absolute;
+        color: rgb(29, 155, 240);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 13px;
+        margin-top: 80px;
+        margin-left: -157px;
+        cursor: pointer;
+    }
+    .termsofservice:hover{
+        text-decoration: underline;
+    }
+    .and{
+        position: absolute;
+        color: gray;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 13px;
+        margin-top: 95px;
+        margin-left: -340px;
+        cursor: pointer;
+    }
+    .Privacy{
+        position: absolute;
+        color: rgb(29, 155, 240);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 13px;
+        margin-top: 95px;
+        margin-left: -315px;
+        cursor: pointer;
+    }
+    .Privacy:hover{
+        text-decoration: underline;
+    }
+    .including{
+        position: absolute;
+        color: gray;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 13px;
+        margin-top: 95px;
+        margin-left: -236px;
+        cursor: pointer;
+    }
+    .Cookie{
+        position: absolute;
+        color: rgb(29, 155, 240);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 13px;
+        margin-top: 95px;
+        margin-left: -173px;
+        cursor: pointer;
+    }
+    .Cookie:hover{
+        text-decoration: underline;
+    }
+    .haveanaccountalready{
+        color: gray;
+        position: absolute;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        margin-top: 140px;
+        margin-left: -340px;
+
+    }
+    .login{
+        position: absolute;
+        color: rgb(29, 155, 240);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        margin-top: 140px;
+        margin-left: -169px;
+        cursor: pointer;
+    }
+    .login:hover{
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <div class="Landing-div">
+        <div class="first-line">
+           <a href="index.html"> <span id="close-icon" class="material-symbols-outlined">close</span></a>
+                <img class="x-icon" src="images/X icon.png" alt=""> 
+        </div>
+        <span class="line-2">Join X today</span>
+        <a href="https://accounts.google.com/"><button class="signup-google"><img class="googlelogo" src="images/googlelogo.png" alt="" > <span class="Google-span">Sign up with Google</span></button></a>
+        <a href="https://appleid.apple.com/"><button class="signup-apple"><img class="applelogo" src="images/applelogo.png" alt=""><span class="Apple-span">Sign up with Apple</span></button></a>
+        <div class="hr-div">
+            <hr class="hr1"> <span class="or">or</span> <hr class="hr2">
+        </div>
+
+        <a href="CREATEACCT.html"><button class="Create-acct"><span class="Create-acct-span">Create account</span></button></a>
+
+        <span class="bysigningup">By signing up, you agree to the</span><span class="termsofservice">  Terms of Service  </span>
+        <span class="and">and</span><span class="Privacy"> Privacy Policy</span><span class="including">, including</span><span class="Cookie"> Cookie Use.</span>
+
+        <span class="haveanaccountalready">Have an account already?</span><span class="login"> Log in</span>
+
+    </div>
+    
+</body>
+</html>

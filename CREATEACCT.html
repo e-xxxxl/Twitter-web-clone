@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script>
+        function enableSubmit(){
+        let inputs = document.getElementsByClassName('Email'); // Enter your class name for a required field, this should also be reflected within your form fields.
+        let btn = document.querySelector('button ');
+        let isValid = true;
+        for (var i = 0; i < inputs.length; i++){
+        let changedInput = inputs[i];
+        if (changedInput.value.trim() === "" || changedInput.value === null){
+        isValid = false;
+        break;
+        }
+        }
+        btn.disabled = !isValid;
+        }
+        </script> -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background-color: black;
+
+    }
+
+    .background-image {
+        position: absolute;
+        filter: blur(3px);
+        -webkit-filter: blur(3px);
+    }
+
+    .sign-in-box {
+        position: absolute;
+        height: 564px;
+        width: 592px;
+        background-color: black;
+        border-radius: 13px;
+        margin-left: 381px;
+        margin-top: 30px;
+    }
+
+    .first-line {
+        position: absolute;
+        display: flex;
+        align-items: center;
+
+    }
+
+    #close-icon {
+        color: white;
+        margin-left: 18px;
+        margin-top: 15px;
+    }
+
+    .first-step {
+        color: rgb(231, 233, 234);
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+
+    .second-line {}
+
+    .Createyouraccount {
+        position: absolute;
+
+        font-size: 31px;
+        color: rgb(231, 233, 234);
+        font-weight: 700;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 78px;
+        margin-left: 78px;
+    }
+
+    .name {
+        background: transparent;
+        border: 1px solid grey;
+        border-radius: 7px;
+        height: 53px;
+        width: 437px;
+        margin-top: 158px;
+        margin-left: 28px;
+        color: rgb(231, 233, 234);
+    }
+
+    /* .name-text {
+        position: absolute;
+        color: grey;
+        margin-top: 170px;
+        margin-left: 85px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: gray;
+
+
+    } */
+
+    .name:focus-within {
+        border: 2px solid rgb(26, 140, 216);
+
+    }
+
+    input.name:focus {
+        outline-width: 0;
+    }
+    .Email{
+        background: transparent;
+        border: 1px solid grey;
+        border-radius: 7px;
+        height: 53px;
+        width: 437px;
+        margin-top: 40px;
+        margin-left: 28px;
+        color: rgb(231, 233, 234);
+    }
+    /* .email-text{
+        position: absolute;
+        color: grey;
+        margin-top: 55px;
+        margin-left: 85px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: gray;
+
+    } */
+    .Email:focus-within {
+        border: 2px solid rgb(26, 140, 216);
+
+    }
+
+    input.Email:focus {
+        outline-width: 0;
+    }
+    .fourth-line{
+
+    }
+    .dob{
+        position: absolute;
+        font-size: 15px;
+        font-weight: 700;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(231, 233, 234);
+        margin-top: 36px;
+        margin-left: 78px;
+    }
+    ::placeholder{
+        position: absolute;
+        color: grey;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 17px;
+        margin-top: -9px;
+        margin-left: 10px;
+        
+    }
+    input{
+        text-align: center;
+        font-size: 18px;
+    }
+    .Confirm{
+        position: absolute;
+        color: rgb(113, 118, 123);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 14px;
+        margin-left: 78px;
+        margin-top: 60px;
+        line-height: 16px;
+    }
+    .month-div{
+        display: flex;
+    }
+    .month-select{
+        background: transparent;
+        color: rgb(113, 118, 123);
+        height: 55px;
+        width: 205px;
+        margin-left: 68px;
+        margin-top: 110px;
+        border-radius: 5px;
+    }
+    .month-select:focus-within{
+        border: 2px solid rgb(26, 140, 216);
+    }
+    .day-select{
+        background: transparent;
+        color: rgb(113, 118, 123);
+        height: 55px;
+        width: 90px;
+        margin-left: 10px;
+        margin-top: 110px;
+        border-radius: 5px;
+
+    }
+    .day-select:focus-within{
+        border: 2px solid rgb(26, 140, 216);
+    }
+    .year-select{
+        background: transparent;
+        color: rgb(113, 118, 123);
+        height: 55px;
+        width: 130px;
+        margin-left: 10px;
+        margin-top: 110px;
+        border-radius: 5px;
+    }
+    .year-select:focus-within{
+        border: 2px solid rgb(26, 140, 216);
+    }
+    .Next{
+        position: absolute;
+        width: 439px;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        height: 50px;
+        border-radius: 30px;
+        border: none;
+        margin-left: 58px;
+        margin-top: 27px;
+
+    }
+    
+</style>
+
+<body>
+    <img class="background-image" src="images/CREATE222.JPG" alt="">
+    <div class="sign-in-box">
+        <div class="first-line">
+            <a href="LANDING PAGE.html"><span id="close-icon" class="material-symbols-outlined">close</span></a>
+            <!-- <span id="close-icon" class="material-symbols-outlined">close</span> -->
+            <span class="first-step">Step 1 of 2</span>
+        </div>
+        <div class="second-line">
+            <span class="Createyouraccount">Create your account</span>
+        </div>
+        <div class="namediv">
+            <span class="name-text">Name</span> 
+            <input placeholder="Name" class="name" type="text" minlength="10" required>
+        </div>
+        <div class="emaildiv">
+            <span class="email-text">Email</span>
+            <input placeholder="Email"  class="Email" type="email" required >
+        </div>
+
+        <div class="fourth-line">
+            <span class="dob">Date of birth</span>
+            
+        </div>
+        <span class="Confirm">This will not be shown publicly. Confirm your own age, even if this <br> account is for a business, a pet, or something else.</span>
+
+        <div class="month-div">
+            <select class="month-select"  name="" id="">
+                <option value="">Month</option>
+                <option value="">January</option>
+                <option value="">February</option>
+                <option value="">March</option>
+                <option value="">April</option>
+                <option value="">May</option>
+                <option value="">June</option>
+                <option value="">July</option>
+                <option value="">August</option>
+                <option value="">September</option>
+                <option value="">October</option>
+                <option value="">November</option>
+                <option value="">December</option>
+            </select>
+            <select class="day-select" name="" id="">
+                <option value="">Day</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+                <option value="">11</option>
+                <option value="">12</option>
+                <option value="">13</option>
+                <option value="">14</option>
+                <option value="">15</option>
+                <option value="">16</option>
+                <option value="">17</option>
+                <option value="">18</option>
+                <option value="">19</option>
+                <option value="">20</option>
+                <option value="">21</option>
+                <option value="">22</option>
+                <option value="">23</option>
+                <option value="">24</option>
+                <option value="">25</option>
+                <option value="">26</option>
+                <option value="">27</option>
+                <option value="">28</option>
+                <option value="">29</option>
+                <option value="">30</option>
+                <option value="">31</option>
+            </select>
+            <select class="year-select" name="" id="">
+                <option value="">Year</option>
+                <option value="">2000</option>
+                <option value="">2001</option>
+                <option value="">2002</option>
+                <option value="">2003</option>
+                <option value="">2004</option>
+                <option value="">2005</option>
+                <option value="">2006</option>
+                <option value="">2007</option>
+                <option value="">2008</option>
+                <option value="">2009</option>
+                <option value="">2010</option>
+                <option value="">2011</option>
+                <option value="">2012</option>
+                <option value="">2013</option> 
+                
+            </select>
+        </div>
+        
+            <a href="WELCOMELOGIN.html"><button type="submit" class="Next">NEXT</button></a>
+        
+    </div>
+    <form action="#" method="post">
+        <input type="text" class="required" onkeyup="enableSubmit()">
+        <input type="email" class="required"  onkeyup="enableSubmit()">
+        <!-- <input type="button" value="Submit Form" disabled> -->
+        <button value="Submit Form" disabled></button>
+        </form>
+</body>
+
+</html>
